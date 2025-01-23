@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Poppins&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    background-color: #000000;
+    color: white;
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.stopWatch-con{
+    margin-top: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Display Time */
+.display-time{
+    width: 270px;
+    height: max-content;
+    border: 2px solid #6c757d;
+    border-radius: 15px;
+    padding: 18px;
+    margin: 25px;
+}
+h1{
+    font-family: "Consolas, 'Courier New', monospace";
+    margin-bottom: 2px;
+    margin-left: 20px;
+    display: flex;
+    width: 270px;
+}
+span{
+    padding: 2px;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+#milseconds{
+    font-size: 2rem;
+    margin-top: 14px;
+}
+.sub-tit{
+    display: flex;
+    gap: 45px;
+    margin-left: 30px;
+}
+p{
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+/* Buttons */
+button{
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    margin-right: 18px;
+    margin-left: 5px;
+    border: none;
+    background-color: #292a2c;
+    color: white;
+    transition: .3s;
+}
+
+.clickBtn{
+    background-color: rgb(97, 95, 95);
+    border-radius: 5px;
+}
+/* Laps */
+.laps{
+    padding: 0;
+    list-style: none;
+    max-height: 100px;
+    overflow-y: auto;
+}
+.laps::-webkit-scrollbar {
+    display: none;
+}
+
+.clear{
+    width: 65px;
+    height: 30px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 15px;
+}
+
+.display{
+    display: none;
+}
+
